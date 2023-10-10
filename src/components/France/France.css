@@ -1,0 +1,102 @@
+#france {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ 
+  }
+
+  img {
+    width: 50%; /* Изображение будет уменьшено до 50% от исходной ширины */
+    height: auto; /* Автоматически подстраиваем высоту для сохранения пропорций */
+  }
+
+  .name{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .france-fon {
+    background-image: url(../../assets/france.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0; /* Добавим немного отступов для секции */
+  }
+  
+  .panel-content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .panel-title {
+    padding: 25px; /* Increase padding for larger panels */
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  .panel-content {
+    padding: 40px; /* Increase padding for larger content area */
+    background-color: #fff;
+    font-size: 18px; /* Increase font size for better readability */
+  }
+  
+  
+  .panel-content-wrapper img {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  
+  .panel-content-wrapper p {
+    flex: 1;
+    text-align: justify; /* You can adjust the text alignment as needed */
+  }
+  
+  
+  .accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .panel {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .panel:last-child {
+    border-bottom: none;
+  }
+  
+  .panel-titlee {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  .panel-titlee:hover {
+    background-color: #723712;
+  }
+  
+  .panel-titlee.active {
+    background-color: #e0e0e0;
+  }
+  
+  .panel-content {
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 565px) {
+    .accordion {
+      width: 200px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }

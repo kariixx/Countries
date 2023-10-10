@@ -1,0 +1,82 @@
+#kyrgyzstan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.panel {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  
+}
+
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-title {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.panel-title:hover {
+  background-color: #ca3a3a;
+}
+
+.panel-title.active {
+  background-color: #e0e0e0;
+}
+
+.panel-content {
+  padding: 20px; /* Increase padding for more space */
+  background-color: #fff;
+}
+
+.panel-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.panel-content-wrapper img {
+  flex: 1;
+  max-width: 100%; /* Adjust the maximum width of the image */
+  max-height: 300px; /* Set a maximum height for the image */
+  margin-right: 20px;
+}
+
+.panel-content-wrapper p {
+  flex: 1;
+  text-align: justify;
+}
+
+.section-red-bg {
+  background-image: url(../../assets/5e6a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+@media (max-width: 565px) {
+  .accordion {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
